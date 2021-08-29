@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,100&display=swap" rel="stylesheet">
+
+
+    <title>Lívia Couto</title>
+
+</head>
+
+<body>
+    <header>
+    <img src="liviacouto.png" alt="Logo Code">
+
+    <ul>
+        <li><a  target="blank" href="https://github.com/LiviaCouto"><strong>Github</strong></a>
+        </li>
+        
+        <li><a target="blank" href="https://mailto:liviacouto.ps@gmail.com"><strong>Email</strong></a>
+
+        </li>
+        <li><a target="blank" href="https://wa.me/081997433844"><strong>WhatsApp</strong></a>
+
+        </li>
+    </ul>
+
+    </header>   
+
+        </br>
+
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Lívia Couto</h1>
+                <h4>Front-End Developer</h4>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fas fa-sort-down"></i>
+
+
+            </div>
+            
+            <div style="display: none;" id="about">
+                <p>
+                    Apaixonada por Front-End e por Desenvolvimento WEB! Estudante de Análise e Desenvolvimento de Sistemas pela UNESA e 
+                    também do Curso Técnico em Informática para Internet, pela IFPE! 
+                </p>
+            </div>
+
+        </br>
+
+            <div class="form">
+
+                <div>
+                    <p>Deixe seu contato!</p>
+
+                </div>
+                
+                <form action="">
+                    <input type="text" placeholder="Seu melhor e-mail :)">
+                    <button>Enviar!</button>
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>
